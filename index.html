@@ -2,7 +2,12 @@
 <html>
 <head>
     <script>//window.location.href = `https://www.satlantis.io/c/87/Bitcoin-Builders-Brunch`;</script>
-    <script>window.location.href = `https://www.satlantis.io/events/1976/Bitcoin-Builders-Brunch`;</script>
+    <script>
+        var now = Math.floor( Date.now() / 1000 );
+        var switch_time = Math.floor( new Date( '2026-03-28 12:00:00 GMT-0400' ).getTime() / 1000 );
+        if ( now > switch_time ) window.location.href = `https://www.satlantis.io/events/1993/Bitcoin-Builders-Brunch`;
+        else window.location.href = `https://www.satlantis.io/events/1992/Bitcoin-Builders-Brunch`;
+    </script>
     <title>Bitcoin Builders Brunch in San Juan</title>
 </head>
 <body>
